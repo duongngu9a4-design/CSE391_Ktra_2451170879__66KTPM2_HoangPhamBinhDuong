@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasklist</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+</head>
+<body>
+    <div class="container bg-light py-4 rounded my-4">
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h2 class="fw-bold m-0">Tasklist</h2>
+            <button class="btn btn-primary px-4" data-bs-toggle="modal" data-bs-target="#modal">Add Task</button>
+        </div>
+
+        <div id="taskList" class="d-flex flex-column gap-3"></div> 
+    </div>
+
+    <div class="modal fade" id="modal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fw-bold">Add Task</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="taskForm">
+                        <div class="mb-3">
+                            <label for="taskInput" class="form-label fw-semibold">Task</label>
+                            <input type="text" class="form-control" id="taskInput" placeholder="Type your task here...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label d-block fw-semibold">Priority</label>
+                            <div class="row g-2">
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="priority" id="high" checked>
+                                    <label class="btn btn-outline-danger w-100" for="high">High</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="priority" id="medium">
+                                    <label class="btn btn-outline-warning w-100" for="medium">Medium</label>
+                                </div>
+                                <div class="col">
+                                    <input type="radio" class="btn-check" name="priority" id="low">
+                                    <label class="btn btn-outline-success w-100" for="low">Low</label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" id="btnSave" class="btn btn-secondary">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
