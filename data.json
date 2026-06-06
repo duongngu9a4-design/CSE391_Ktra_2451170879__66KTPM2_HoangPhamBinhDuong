@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "task_name": "Go to gym",
+    "priority": "high"
+  },
+  {
+    "id": 2,
+    "task_name": "Go jogging",
+    "priority": "medium"
+  },
+  {
+    "id": 3,
+    "task_name": "Go to the store",
+    "priority": "low"
+  },
+  {
+    "id": 4,
+    "task_name": "Read a programming book",
+    "priority": "medium"
+  },
+  {
+    "id": 5,
+    "task_name": "Do web development homework",
+    "priority": "high"
+  }
+]
